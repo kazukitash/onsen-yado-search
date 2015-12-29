@@ -1,10 +1,9 @@
 source :rubygems
 
 gem "sinatra"
-
 gem "slim"
 
-group :dev do
+group :development do
   gem "sinatra-reloader"
 end
 
