@@ -1,0 +1,14 @@
+<Area>
+  <Region cd="01" name="北海道" />
+  <Region cd="05" name="東北" />
+  <Region cd="10" name="北関東" />
+  <Region cd="15" name="首都圏" />
+  <Region cd="20" name="甲信越" />
+  <Region cd="25" name="北陸" />
+  <Region cd="30" name="東海" />
+  <Region cd="35" name="近畿" />
+  <Region cd="40" name="山陰・山陽" />
+  <Region cd="45" name="四国" />
+  <Region cd="50" name="九州" />
+  <Region cd="55" name="沖縄" />
+</Area>

@@ -1,0 +1,22 @@
+<Quality>
+  <Onsen cd="0" name="絞り込まない" />
+  <Onsen cd="1" name="単純温泉" />
+  <Onsen cd="2" name="アルカリ単純泉" />
+  <Onsen cd="3" name="単純炭酸泉" />
+  <Onsen cd="4" name="弱アルカリ性低張性泉" />
+  <Onsen cd="5" name="中性低張性高温泉" />
+  <Onsen cd="6" name="塩化物泉" />
+  <Onsen cd="7" name="ナトリウム塩化物泉" />
+  <Onsen cd="8" name="炭酸水素塩泉" />
+  <Onsen cd="9" name="炭酸鉄泉" />
+  <Onsen cd="10" name="硫酸塩泉" />
+  <Onsen cd="11" name="二酸化炭素泉" />
+  <Onsen cd="12" name="含鉄泉" />
+  <Onsen cd="13" name="含銅一鉄泉" />
+  <Onsen cd="14" name="硫黄泉" />
+  <Onsen cd="15" name="酸性泉" />
+  <Onsen cd="16" name="含アルミニウム泉" />
+  <Onsen cd="17" name="放射能泉" />
+  <Onsen cd="18" name="鉱泉" />
+  <Onsen cd="99" name="その他" />
+</Quality>
