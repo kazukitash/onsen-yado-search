@@ -1,0 +1,19 @@
+#show
+  == slim :_header
+  == slim :_breadcrumb
+  .advanced-options
+    h2 詳細絞り込み
+    form(action="/onsen/#{@o_id}" method="get")
+      - settings.advanced_options.elements.each("AdvancedOptions/Option") do |option|
+        .advanced-option(class=(@query[option.attributes["name"]].to_i == 1 ? "active" : ""))
+          input(type="checkbox" name=option.attributes["name"] value="1" checked=(@query[option.attributes["name"]].to_i == 1 ? "checked" : false))
+          = option.text
+      input.advanced-option-submit(type="submit" value="絞り込み")
+      .clear
+  h2.onsen-name= @onsen_name
+  - if @number_of_results == 0
+    .no-content 全0件
+  - else
+    - @result.elements.each("Results/Hotel") do |hotel|
+      == slim :_item, locals: { hotel: hotel }
+    == slim :_page_link, locals: { uri: lambda { |page| "/onsen/#{@o_id}?start=#{page * @count + 1}" }, current_page: @current_page, max_page_size: @max_page_size }

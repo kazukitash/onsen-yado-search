@@ -38,3 +38,32 @@ get "/onsen" do
   @title = "温泉宿を検索 - 温泉宿検索"
   slim :new
 end
+
+get "/onsen/:id" do
+  start = params[:start] ||= 1
+  @o_id = params[:id]
+
+  begin
+    @count = 10
+    @query = { o_id: @o_id, start: start, count: @count, xml_ptn: 1 }
+    activate_advanced_options @query, params
+    response = Jalan.fetch(Jalan.uri(Jalan::HOTEL_API_URI, @query))
+    @result = REXML::Document.new(response.body)
+
+    page_info, @number_of_results, @current_page, @max_page_size = page_status(@result, @count)
+    if @number_of_results == 0
+      response = Jalan.fetch(Jalan.uri(Jalan::HOTEL_API_URI, { o_id: @o_id, count: 1, xml_ptn: 1 }))
+      result = REXML::Document.new(response.body)
+      @onsen_name = result.elements["Results/Hotel[1]/OnsenName"].text
+    else
+      @onsen_name = @result.elements["Results/Hotel[1]/OnsenName"].text
+    end
+    @title  = "#{@onsen_name} - 温泉宿検索"
+    @header = "#{@onsen_name}　#{page_info}"
+    slim :show
+  rescue Net::HTTPServerException, Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError => e
+    html "400"
+  rescue Net::HTTPError, Net::HTTPFatalError, Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError, ArgumentError => e
+    html "500"
+  end
+end
