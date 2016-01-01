@@ -4,6 +4,9 @@ require "sinatra/reloader" if development?
 require "slim"
 require "rexml/document"
 require File.expand_path("../controller", __FILE__)
+Dir.glob("helpers/**/*.rb").each do |h|
+  require File.expand_path("../#{h}", __FILE__)
+end
 
 config_file File.expand_path("../config/config.yml", __FILE__)
 configure do

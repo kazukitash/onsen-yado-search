@@ -1,0 +1,28 @@
+a.hotel(href=hotel.elements["HotelDetailURL"].text)
+  .hotel-header
+    .hotel-catch-copy== hotel.elements["HotelCatchCopy"].text
+    .hotel-area= "エリア：#{hotel.elements["Area/Prefecture"].text} ＞ #{hotel.elements["Area/SmallArea"].text}"
+    .clear
+  img.hotel-image(src=hotel.elements["PictureURL"].text)
+  .hotel-description
+    h3.hotel-name= hotel.elements["HotelName"].text
+    - if hotel.elements["Rating"].text
+      .hotel-rating
+        - star, half_star, no_star = rating_star(hotel.elements["Rating"].text.to_f)
+        - star.times
+          img(src="/images/star.png")
+        - if half_star == 1
+          img(src="/images/half_star.png")
+        - no_star.times
+          img(src="/images/no_star.png")
+    .clear
+    .hotel-caption== hotel.elements["HotelCaption"].text
+    table.hotel-access
+      tbody
+        tr
+          th.hotel-access-header アクセス
+        - hotel.elements.each("AccessInformation") do |access|
+          tr
+            td.hotel-access-name= access.attributes["name"]
+            td= access.text
+  .clear

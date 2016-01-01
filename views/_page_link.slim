@@ -1,0 +1,13 @@
+.page-link
+  - if current_page - 1 >= 1
+    a(href=uri.call(current_page - 2)) 前へ
+  - 7.times do |i|
+      - if i == 3
+        .active= current_page
+      - else
+        - link_page = current_page - 3 + i
+        - if link_page >= 1 && link_page <= max_page_size
+          a(href=uri.call(link_page - 1))= link_page
+  - if current_page + 1 <= max_page_size
+    a(href=uri.call(current_page)) 次へ
+  .clear
