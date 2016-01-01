@@ -1,0 +1,279 @@
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif, serif;
+  color: #303030;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+header {
+  font-size: 24px;
+}
+
+header img {
+  height: 20px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:visited {
+  color: #303030;
+}
+
+.clear {
+  clear: both;
+}
+
+.breadcrumb {
+  font-size: 11px;
+  font-weight: bolder;
+}
+
+.onsen-name {
+  padding-left: 8px;
+  border-left: 5px solid #e95c1e;
+  border-bottom: 2px solid #e95c1e;
+  font-size: 18px;
+}
+
+.no-content {
+  width: 100%;
+  font-size: 11px;
+  font-weight: bolder;
+  text-align: right;
+}
+
+.number-of-results {
+  font-size: 11px;
+  font-weight: bolder;
+  float: right;
+}
+
+.hotel {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #303030;
+}
+
+.hotel:visited {
+  color: #303030;
+}
+
+.hotel:hover {
+  background-color: #fff9e6;
+}
+
+.hotel .hotel-header {
+  background-color: #ffd55a;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.hotel .hotel-header .hotel-catch-copy {
+  font-weight: bolder;
+  float: left;
+}
+
+.hotel .hotel-header .hotel-area {
+  float: right;
+}
+
+.hotel .hotel-image {
+  width: 26%;
+  float: left;
+  margin-top: 5px;
+}
+
+.hotel .hotel-name {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 5px;
+  font-size: 18px;
+  float: left;
+}
+
+.hotel .hotel-description {
+  width: 73%;
+  float: right;
+}
+
+.hotel .hotel-rating {
+  margin-top: 5px;
+  float: right;
+}
+
+.hotel .hotel-rating img {
+  width: 20px;
+}
+
+.hotel .hotel-access {
+  width: 100%;
+}
+
+.hotel .hotel-access .hotel-access-header {
+  text-align: left;
+}
+
+.hotel .hotel-access .hotel-access-name {
+  width: 80px;
+  height: 15px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 11px;
+}
+
+.hotel .hotel-access th {
+  font-size: 11px;
+}
+
+.hotel .hotel-access td {
+  font-size: 11px;
+}
+
+.hotel .hotel-access tr {
+  line-height: 12px;
+}
+
+.advanced-options {
+  margin-top: 5px;
+  border: 2px solid #f19617;
+}
+
+.advanced-options form {
+  padding: 5px;
+}
+
+.advanced-options h2 {
+  color: #fff;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 5px;
+  background-color: #f19617;
+}
+
+.advanced-options .advanced-option {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  border-radius: 4px;
+  margin: 2px;
+  padding: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 11px;
+  float: left;
+}
+
+.advanced-options .advanced-option.active {
+  border: 1px solid #86c351;
+  background-color: #d5ebc2;
+}
+
+.advanced-options .advanced-option-submit {
+  float: right;
+  border: 1px solid #303030;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.advanced-options .advanced-option-submit:hover {
+  background-color: #eee;
+}
+
+.page-link {
+  height: 40px;
+  padding: 0px;
+}
+
+.page-link a {
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-left: 5px;
+  margin-right: 5px;
+  float: left;
+  border: 1px solid #303030;
+  cursor: pointer;
+}
+
+.page-link a:hover {
+  background-color: #eee;
+}
+
+.page-link a {
+  text-decoration: none;
+}
+
+.page-link .active {
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-left: 5px;
+  margin-right: 5px;
+  float: left;
+  border: none;
+}
+
+#top {
+  text-align: center;
+}
+
+#top img {
+  width: 380px;
+}
+
+#top .search-btn {
+  width: 220px;
+  height: 60px;
+  margin: auto;
+}
+
+#top a {
+  width: 220px;
+  height: 60px;
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+  border: solid 1px #303030;
+  font-size: 24px;
+}
+
+#top a:hover {
+  background-color: #eee;
+}
+
+#new, #show, #index {
+  width: 800px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+#new label {
+  font-weight: bolder;
+  width: 150px;
+}
+
+#new input[type=submit] {
+  float: right;
+  width: 80px;
+  height: 30px;
+  border: 1px solid #303030;
+  background-color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#new input[type=submit]:hover {
+  background-color: #eee;
+}
+
+#jalan-credit {
+  display: block;
+  width: 800px;
+  margin: auto;
+  text-align: right;
+}
