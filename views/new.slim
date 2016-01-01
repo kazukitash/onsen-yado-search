@@ -1,1 +1,16 @@
-p= @content
+#new
+  == slim :_header
+  form(action="/onsen" method="get")
+    .area-select
+      label エリア選択
+      select(name="reg")
+        - settings.region_code.elements.each("Area/Region") do |el|
+          option(value="#{el.attributes["cd"]}")= el.attributes["name"]
+    .quality-select
+      label 泉質選択
+      select(name="onsen_q")
+        - settings.onsen_q.elements.each("Quality/Onsen") do |el|
+          option(value="#{el.attributes["cd"]}")= el.attributes["name"]
+    input(type="hidden" name="start" value="1")
+    input(type="submit" value="検索")
+    .clear

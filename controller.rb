@@ -1,6 +1,5 @@
 get "/" do
   @title = "温泉宿検索"
-  @content = "Hello World!"
   slim :top
 end
 
@@ -11,8 +10,7 @@ get "/search" do
   slim :index
 end
 
-get "/search" do
+get "/onsen" do
   @title = "温泉宿を検索 - 温泉宿検索"
-  @content = "Search"
   slim :new
 end
