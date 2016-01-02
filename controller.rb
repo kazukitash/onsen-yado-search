@@ -46,7 +46,7 @@ get "/onsen/:id" do
   begin
     @count = 10
     @query = { o_id: @o_id, start: start, count: @count, xml_ptn: 1 }
-    activate_advanced_options @query, params
+    Jalan.activate_advanced_options @query, params
     response = Jalan.fetch(Jalan.uri(Jalan::HOTEL_API_URI, @query))
     @results = Jalan.parse(:hotel, response)
 

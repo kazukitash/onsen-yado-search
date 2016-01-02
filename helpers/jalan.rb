@@ -65,5 +65,12 @@ module Jalan
     results
   end
 
-  module_function :fetch, :uri, :parse
+  def activate_advanced_options query, params
+    Sinatra::Application.settings.advanced_options.elements.each("AdvancedOptions/Option") do |o|
+      name = o.attributes["name"]
+      query[name] = 1 if params[name].to_i == 1
+    end
+  end
+
+  module_function :uri, :fetch, :parse, :activate_advanced_options
 end
