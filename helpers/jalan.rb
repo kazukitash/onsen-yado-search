@@ -1,6 +1,3 @@
-require "net/http"
-require "uri"
-
 module Jalan
   BASE_API_URI  = "http://jws.jalan.net/"
   ONSEN_API_URI = BASE_API_URI + "APICommon/OnsenSearch/V1/"

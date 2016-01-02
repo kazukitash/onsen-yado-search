@@ -1,8 +1,10 @@
 require "sinatra"
 require "sinatra/config_file"
 require "sinatra/reloader" if development?
-require "slim"
 require "rexml/document"
+require "net/http"
+require "slim"
+require "uri"
 require File.expand_path("../controller", __FILE__)
 Dir.glob("helpers/**/*.rb").each do |h|
   require File.expand_path("../#{h}", __FILE__)
