@@ -1,18 +1,20 @@
 #index
   == slim :_header
   == slim :_breadcrumb
-  - if @number_of_results == 0
+  - if @results["NumberOfResults"] == 0
   - else
     .onsen
-      - @o_result.elements.each_with_index("Results/Onsen") do |onsen, index|
-        h2.onsen-name= onsen.elements["OnsenName"].text
-        .hotels
-          - @h_results[index].elements.each("Results/Hotel") do |hotel|
-            == slim :_item, locals: { hotel: hotel }
+      - @results["Onsen"].each do |onsen|
+        h2.onsen-name= onsen["OnsenName"]
+        - number_of_results = onsen["HotelResults"]["NumberOfResults"]
+        - if number_of_results == 0
+        - else
+          .hotels
+             - onsen["HotelResults"]["Hotel"].each do |hotel|
+               == slim :_item, locals: { hotel: hotel }
         .number-of-results
-          - number_of_results = @h_results[index].elements["Results/NumberOfResults"].text.to_i
           - if number_of_results > @h_count
-            a(href="/onsen/#{onsen.elements["OnsenID"].text}")= "全#{number_of_results}件　もっと見る..."
+            a(href="/onsen/#{onsen["OnsenID"]}")= "全#{number_of_results}件　もっと見る..."
           - else
             = "全#{number_of_results}件"
         .clear

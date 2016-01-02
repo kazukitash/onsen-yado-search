@@ -12,9 +12,9 @@
       input.advanced-option-submit(type="submit" value="絞り込み")
       .clear
   h2.onsen-name= @onsen_name
-  - if @number_of_results == 0
+  - if @results["NumberOfResults"] == 0
     .no-content 全0件
   - else
-    - @result.elements.each("Results/Hotel") do |hotel|
+    - @results["Hotel"].each do |hotel|
       == slim :_item, locals: { hotel: hotel }
     == slim :_page_link, locals: { uri: lambda { |page| "/onsen/#{@o_id}?start=#{page * @count + 1}" }, current_page: @current_page, max_page_size: @max_page_size }
