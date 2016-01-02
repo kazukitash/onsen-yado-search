@@ -6,5 +6,6 @@ gem "slim"
 
 group :development do
   gem "sinatra-reloader"
+  gem "rspec"
 end
 
