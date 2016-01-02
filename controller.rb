@@ -52,7 +52,7 @@ get "/onsen/:id" do
 
     if @results["NumberOfResults"] == 0
       response = Jalan.fetch(Jalan.uri(Jalan::HOTEL_API_URI, { o_id: @o_id, count: 1, xml_ptn: 1 }))
-      results = Jalan.parse(:hotel, response)
+      results  = Jalan.parse(:hotel, response)
       @onsen_name = results["Hotel"][0]["OnsenName"]
     else
       @onsen_name = @results["Hotel"][0]["OnsenName"]
