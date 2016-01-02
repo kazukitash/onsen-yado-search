@@ -15,10 +15,12 @@ get "/onsen" do
     query    = { reg: @reg, onsen_q: @onsen_q, start: params[:start].to_i, count: @o_count}
     response = Jalan.fetch(Jalan.uri(Jalan::ONSEN_API_URI, query))
     @results = Jalan.parse(:onsen, response)
-    @results["Onsen"].each do |onsen|
-      query = { o_id: onsen["OnsenID"], count: @h_count, xml_ptn: 1  }
-      response = Jalan.fetch(Jalan.uri(Jalan::HOTEL_API_URI, query))
-      onsen["HotelResults"] = Jalan.parse(:hotel, response)
+    unless @results["NumberOfResults"] == 0
+      @results["Onsen"].each do |onsen|
+        query = { o_id: onsen["OnsenID"], count: @h_count, xml_ptn: 1  }
+        response = Jalan.fetch(Jalan.uri(Jalan::HOTEL_API_URI, query))
+        onsen["HotelResults"] = Jalan.parse(:hotel, response)
+      end
     end
 
     page_info, @current_page, @max_page_size = page_status(@results, @o_count)
