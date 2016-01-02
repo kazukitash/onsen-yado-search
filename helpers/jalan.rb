@@ -1,5 +1,5 @@
-require 'net/http'
-require 'uri'
+require "net/http"
+require "uri"
 
 module Jalan
   BASE_API_URI  = "http://jws.jalan.net/"
@@ -12,14 +12,14 @@ module Jalan
   end
 
   def fetch uri_str, limit = 3
-    raise ArgumentError, 'HTTP redirect too deep' if limit == 0
+    raise ArgumentError, "HTTP redirect too deep" if limit == 0
 
     response = Net::HTTP.get_response(URI.parse(uri_str))
     case response
     when Net::HTTPSuccess
       response
     when Net::HTTPRedirection
-      fetch(response['location'], limit - 1)
+      fetch(response["location"], limit - 1)
     else
       response.value
     end
