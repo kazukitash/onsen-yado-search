@@ -7,7 +7,7 @@ def page_status results, count
   else
     page_info = "#{nor}件中#{df}〜#{df + dpp - 1}件目の検索結果"
   end
-  current_page  = (df / count.to_f).ceil
-  max_page_size = (nor / count.to_f).ceil
+  current_page  = (df / count.to_f + 1).floor
+  max_page_size = (nor / count.to_f + 1).floor
   [page_info, current_page, max_page_size]
 end
