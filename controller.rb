@@ -27,9 +27,15 @@ get "/onsen" do
     @title  = "エリア：#{reg_name}　泉質：#{onsen_q_name} - 温泉宿検索"
     @header = "エリア：#{reg_name}　泉質：#{onsen_q_name}　#{page_info}"
     slim :index
-  rescue Net::HTTPServerException, Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError => e
+  rescue Net::HTTPServerException => error
+    settings.logger.error error
+    settings.logger.error error.backtrace.join("\n")
+    status 400
     html "400"
-  rescue => e
+  rescue => error
+    settings.logger.error error
+    settings.logger.error error.backtrace.join("\n")
+    status 500
     html "500"
   end
 end
@@ -62,9 +68,15 @@ get "/onsen/:id" do
     @title  = "#{@onsen_name} - 温泉宿検索"
     @header = "#{@onsen_name}　#{page_info}"
     slim :show
-  rescue Net::HTTPServerException, Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError => e
+  rescue Net::HTTPServerException => error
+    settings.logger.error error
+    settings.logger.error error.backtrace.join("\n")
+    status 400
     html "400"
-  rescue => e
+  rescue => error
+    settings.logger.error error
+    settings.logger.error error.backtrace.join("\n")
+    status 500
     html "500"
   end
 end
