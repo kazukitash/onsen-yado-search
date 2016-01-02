@@ -42,7 +42,9 @@ module Jalan
         results["Hotel"] = []
         xml.elements.each("Results/Hotel") do |h|
           hotel = {}
-          hotel["Rating"]            = h.elements["Rating"].text.to_f
+          if rating = h.elements["Rating"].text
+            hotel["Rating"] = rating.to_f
+          end
           hotel["OnsenName"]         = h.elements["OnsenName"].text
           hotel["HotelName"]         = h.elements["HotelName"].text
           hotel["SmallArea"]         = h.elements["Area/SmallArea"].text
