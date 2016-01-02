@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Results xmlns="jws">
+  <NumberOfResults>9</NumberOfResults>
+  <DisplayPerPage>1</DisplayPerPage>
+  <DisplayFrom>1</DisplayFrom>
+  <APIVersion>1.4</APIVersion>
+  <Hotel>
+    <HotelID>300624</HotelID>
+    <HotelName>天空の城三宜亭本館</HotelName>
+    <PostCode>395-0034</PostCode>
+    <HotelAddress>長野県飯田市追手町２－６４１－１０</HotelAddress>
+    <Area>
+      <Region>甲信越</Region>
+      <Prefecture>長野県</Prefecture>
+      <LargeArea>伊那・駒ヶ根・飯田・昼神</LargeArea>
+      <SmallArea>飯田・天竜峡</SmallArea>
+    </Area>
+    <HotelType>旅館</HotelType>
+    <HotelDetailURL>http://www.jalan.net/JwsRedirect.do?key=**************&amp;rd_key=MzAwNjI0ICAgIDAwMDE=</HotelDetailURL>
+    <HotelCatchCopy>飯田城址の高台に建つ眺望・味覚・天然温泉の御宿。</HotelCatchCopy>
+    <HotelCaption>飯田城址の高台に建つ、眺望・味覚・天然温泉の御宿です。大浴場からは遠く南アルプスを望み、眼下に飯田市街をご覧頂けます。湯上りには、四季折々旬の素材を大切にした季節の会席膳をお楽しみください。</HotelCaption>
+    <PictureURL>http://www.jalan.net/jalan/images/pictM/8/00218/00218461.jpg</PictureURL>
+    <PictureCaption>南アルプスを一望、飯田市街を眼下に臨む最高の見晴らし</PictureCaption>
+    <AccessInformation name="東京より">車／中央道名古屋方面～飯田～R153を飯田市街へ15分 車以外／JR飯田線飯田駅タクシー5分</AccessInformation>
+    <AccessInformation name="名古屋より">車／中央道飯田方面～飯田～R153を飯田市街へ15分 車以外／JR飯田線飯田駅よりタクシー5分</AccessInformation>
+    <AccessInformation name="最寄り駅１">飯田</AccessInformation>
+    <CheckInTime>15:00</CheckInTime>
+    <CheckOutTime>10:00</CheckOutTime>
+    <X>496212164</X>
+    <Y>127830116</Y>
+    <SampleRateFrom>14700</SampleRateFrom>
+    <LastUpdate day="30" month="01" year="2007" />
+    <OnsenName />
+    <HotelNameKana>てんくうのしろさんぎていほんかん</HotelNameKana>
+    <CreditCard AMEX="true" DC="true" DINNERS="true" ETC="false" JCB="true" MASTER="true" MILLION="false" NICOS="true" SAISON="false" UC="true" UFJ="true" VISA="true">AMEX,DC,DINNERS,JCB,MASTER,NICOS,UC,VISA,UFJ</CreditCard>
+    <NumberOfRatings>3</NumberOfRatings>
+    <Rating />
+    <WifiHikariStation>設置有り</WifiHikariStation>
+    <JJPReferenceFlag>1</JJPReferenceFlag>
+    <AJPReferenceFlag>0</AJPReferenceFlag>
+    <NTAReferenceFlag>0</NTAReferenceFlag>
+    <Plan>
+      <PlanName>絶景！　パノラマ天然温泉大浴場■季節の会席膳２食付</PlanName>
+      <RoomType>和室</RoomType>
+      <RoomType>トイレ</RoomType>
+      <RoomName>和室10畳</RoomName>
+      <PlanCheckIn>15:00</PlanCheckIn>
+      <PlanCheckOut>10:00</PlanCheckOut>
+      <PlanPictureURL>http://www.jalan.net/jalan/images/pictM/Y4/Y300624/Y300624003.jpg
+      </PlanPictureURL>
+      <PlanPictureCaption>南アルプス、飯田市街を一望！</PlanPictureCaption>
+      <PlanPictureURL>http://www.jalan.net/jalan/images/pictM/Y4/Y300624/Y300624000.jpg
+      </PlanPictureURL>
+      <PlanPictureCaption>四季折々旬の素材を大切にした季節の会席膳</PlanPictureCaption>
+      <PlanPictureURL>http://www.jalan.net/jalan/images/pictM/0/00020/00020397.jpg
+      </PlanPictureURL>
+      <PlanPictureCaption>展望露天。空に浮かんでいるかのような景観が素晴らしい</PlanPictureCaption>
+      <Meal>朝/夕あり</Meal>
+      <PlanSampleRateFrom>14700</PlanSampleRateFrom>
+    </Plan>
+    <Plan>
+      <PlanName>マッサージorあかすり■選べる至福の時＆温泉で肌ツル</PlanName>
+      <RoomType>和室</RoomType>
+      <RoomType>トイレ</RoomType>
+      <RoomName>和室10畳</RoomName>
+      <PlanCheckIn>15:00</PlanCheckIn>
+      <PlanCheckOut>10:00</PlanCheckOut>
+      <PlanPictureURL>http://www.jalan.net/jalan/images/pictM/Y4/Y300624/Y300624004.jpg
+      </PlanPictureURL>
+      <PlanPictureCaption>天気のよい日は時間を忘れる気持ちよさ。</PlanPictureCaption>
+      <PlanPictureURL>http://www.jalan.net/jalan/images/pictM/Y4/Y300624/Y300624005.jpg
+      </PlanPictureURL>
+      <PlanPictureCaption>四季折々旬の素材を大切にした季節の会席膳</PlanPictureCaption>
+      <PlanPictureURL>http://www.jalan.net/jalan/images/pictM/7/00217/00217860.jpg
+      </PlanPictureURL>
+      <PlanPictureCaption>清潔で眺めの良い客室</PlanPictureCaption>
+      <Meal>朝/夕あり</Meal>
+      <PlanSampleRateFrom>19950</PlanSampleRateFrom>
+    </Plan>
+    <Plan>
+      <PlanName>ゲルマ＆岩盤浴付■天然温泉とのＷ効果で美肌に！</PlanName>
+      <RoomType>和室</RoomType>
+      <RoomType>トイレ</RoomType>
+      <RoomName>和室10畳</RoomName>
+      <PlanCheckIn>15:00</PlanCheckIn>
+      <PlanCheckOut>10:00</PlanCheckOut>
+      <PlanPictureURL>http://www.jalan.net/jalan/images/pictM/Y4/Y300624/Y300624007.jpg
+      </PlanPictureURL>
+      <PlanPictureCaption>ゲルマニウム温浴＆岩盤浴カプセル</PlanPictureCaption>
+      <PlanPictureURL>http://www.jalan.net/jalan/images/pictM/Y4/Y300624/Y300624004.jpg
+      </PlanPictureURL>
+      <PlanPictureCaption>天気のよい日は時間を忘れる気持ちよさ。</PlanPictureCaption>
+      <PlanPictureURL>http://www.jalan.net/jalan/images/pictM/Y4/Y300624/Y300624002.jpg
+      </PlanPictureURL>
+      <PlanPictureCaption>ご予約制のカラオケルーム。２次会などにどうぞ。</PlanPictureCaption>
+      <Meal>朝/夕あり</Meal>
+      <PlanSampleRateFrom>15750</PlanSampleRateFrom>
+    </Plan>
+  </Hotel>
+</Results>

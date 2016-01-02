@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Results xmlns="jws">
+  <NumberOfResults>23</NumberOfResults>
+  <DisplayPerPage>1</DisplayPerPage>
+  <DisplayFrom>1</DisplayFrom>
+  <APIVersion>1.0</APIVersion>
+  <Onsen>
+    <OnsenName>丸駒温泉</OnsenName>
+    <OnsenNameKana>まるこまおんせん</OnsenNameKana>
+    <OnsenID>0042</OnsenID>
+    <OnsenAddress>北海道千歳市幌美内番外地</OnsenAddress>
+    <Area>
+      <Region>北海道</Region>
+      <Prefecture>北海道</Prefecture>
+      <LargeArea>石狩・空知・千歳</LargeArea>
+      <SmallArea>支笏湖・千歳</SmallArea>
+    </Area>
+    <NatureOfOnsen>塩化物泉</NatureOfOnsen>
+    <OnsenAreaID>50024</OnsenAreaID>
+  </Onsen>
+</Results>
